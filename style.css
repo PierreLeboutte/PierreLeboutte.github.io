@@ -1,7 +1,6 @@
 nav {
     text-align: center; /* Alignement à gauche */
     padding: 10px;
-    background-color: #fff; /* Arrière-plan blanc */
     font-family: 'Poppins'; /* Belle police */
 }
 
@@ -32,10 +31,12 @@ nav ul li a {
     text-decoration: none; /* Ajouté pour supprimer le soulignement */
     background-image: linear-gradient(to top, #000 0%, #000 10%, transparent 10.01% ) no-repeat left bottom / 0 100%;
     transition: background-size .3s; /* Transition fluide */
+    border-bottom: 2px solid transparent; /* Ajoute une bordure transparente en bas */
 }
 
 nav ul li a:hover {
     background-size: 100% 100%; /* Étendre l'image de fond sur toute la largeur lors du survol */
+    border-bottom: 2px solid #000; /* Ajoute une bordure noire en bas au survol */
 }
 
 /*header style*/
