@@ -30,7 +30,7 @@ nav ul li a {
     color: #000; /*couleur noire */
     padding: 10px 20px; /* Espace autour du texte */
     transition: all 0.3s ease; /* Transition fluide lors du survol */
-    background: linear-gradient(to top, #fff, 0%, #000, 10%, transparent 10.1%); /* Dégradé de blanc */
+    background: linear-gradient(to top, #fff, 100%, #000, 10%, transparent 10.1%); /* Dégradé de blanc */
     background-size: 0 100%; /* Taille du dégradé */
     transition: background-size 0.3s; /* Transition fluide */
     text-decoration: none; /* Ajouté pour supprimer le soulignement */
