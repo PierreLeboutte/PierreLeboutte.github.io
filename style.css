@@ -1,42 +1,53 @@
 nav {
-    text-align: center;
+    text-align: left; /* Alignement à gauche */
     padding: 10px;
     background-color: #fff; /* Arrière-plan blanc */
     font-family: Arial, sans-serif; /* Belle police */
 }
 
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Assure que le corps prend au moins toute la hauteur de la fenêtre de visualisation */
+}
+
+.container {
+    width: 80%; /* Utilise 80% de la largeur de la page */
+    margin: auto; /* Centrer le contenu */
+    background-color: #fff; /* Arrière-plan blanc */
+}
+
 nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+    list-style-type: none; /* Enlève les puces */
+    margin: 0; /* Enlève les marges */
+    padding: 0; /* Enlève les espacements internes */
 }
 
 nav ul li {
-    display: inline;
+    display: inline;  /* Affiche les éléments en ligne */
     margin-right: 20px; /* Espacement entre les onglets */
 }
 
 nav ul li a {
-    text-decoration: none;
-    color: #333; /* Couleur du texte */
+    text-decoration: underline; /* Enlève le soulignement des liens */
+    color: #000; /*couleur noire */
     padding: 10px 20px; /* Espace autour du texte */
-    border: 1px solid #ccc; /* Bordure autour des onglets */
-    border-radius: 5px; /* Coins arrondis */
     transition: all 0.3s ease; /* Transition fluide lors du survol */
 }
 
 nav ul li a:hover {
-    background-color: #ccc; /* Couleur de fond au survol */
+    background-color: #AA210C; /* Couleur de fond au survol */
     color: #fff; /* Couleur du texte au survol */
 }
 
-
 /*header style*/
 header {
-    background-color: #333;
+    background-color: #75190C;
     color: #fff; 
     padding: 20px; 
     text-align: center; 
+
 }
 
 /*creating the two-column layout*/
@@ -68,14 +79,20 @@ header {
 }
 
 .profile h1 {
-    text-align: center;
+    text-align: center; 
 }
 
-
-.fade-in {
-  animation: fadeIn 1s;
+@keyframes fadeInUp {
+    0% {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
+
+.tabcontent {
+    animation: fadeInUp 1s ease-out;
 }

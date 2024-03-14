@@ -26,14 +26,21 @@
   </style>
 </head>
 <body>
+    <nav>
+        <ul>
+          <li><a href="index.html" onclick="changeTab(event, 'home')">Home</a></li>
+          <li><a href="about.html" onclick="changeTab(event, 'about')">About</a></li> <!-- Onglet qui redirige vers about.html -->
+        </ul>
+    </nav> 
   <header>
     <h1>About Me</h1>
   </header>
 
-  <div class="about-content">
+
+  <div id="about" class="tabcontent">
     <h2>A little bit about me.</h2>
     <p><strong>Where I’m from</strong></p>
-    <p>🇦🇺 I was born in Brussels (Belgium), capital of Europe</p>
+    <p>I was born in Brussels (Belgium), capital of Europe</p>
 
     <p><strong>What I do now</strong></p>
     <p>I'm a student at Université Catholique de Louvain, studying engineering, focusing on Applied Mathematics and Computer Science</p>
