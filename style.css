@@ -6,8 +6,10 @@ nav {
 }
 
 body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 80%;
-    margin: 0 auto; /* Centre le contenu */
     font-family: Arial, sans-serif; /* Belle police */
 }
 
@@ -32,8 +34,6 @@ nav ul li a:hover {
     /*souligne depuis le centre jusqu'au bout des mots quand on passe sa souris dessus */
     background-image: linear-gradient(0deg, #fff 50%, transparent 50%);
     background-position: 0 100%;
-    background-color: #AA210C; /* Couleur de fond au survol */
-    color: #fff; /* Couleur du texte au survol */
 }
 
 /*header style*/
