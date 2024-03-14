@@ -10,12 +10,8 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh; /* Assure que le corps prend au moins toute la hauteur de la fenêtre de visualisation */
-}
-
-.container {
-    width: 80%; /* Utilise 80% de la largeur de la page */
-    margin: auto; /* Centrer le contenu */
-    background-color: #fff; /* Arrière-plan blanc */
+    width: 80%;
+    margin: 0 auto; /* Centre le contenu */
 }
 
 nav ul {
