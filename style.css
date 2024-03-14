@@ -29,12 +29,11 @@ nav ul li {
 nav ul li a {
     color: #000; /*couleur noire */
     padding: 10px 20px; /* Espace autour du texte */
-    transition: all 0.3s ease; /* Transition fluide lors du survol */
-    /* transition à partir du centre */
-    background-image: linear-gradient(to right, #000, 0%, #000 10%, transparent 10.1% ) no-repeat;
-    background-size: 0% 100%; /* Définir la taille initiale de l'image de fond */
-    transition: background-size 0.3s; /* Transition fluide */
     text-decoration: none; /* Ajouté pour supprimer le soulignement */
+    /* transition à partir du centre */
+    background-image: linear-gradient(to top, #000, 0%, #000 10%, transparent 10.01% ) no-repeat;
+    transition: background-size 0.3s; /* Transition fluide */
+
 }
 
 nav ul li a:hover {
