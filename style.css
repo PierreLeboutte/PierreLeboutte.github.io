@@ -30,14 +30,16 @@ nav ul li a {
     color: #000; /*couleur noire */
     padding: 10px 20px; /* Espace autour du texte */
     transition: all 0.3s ease; /* Transition fluide lors du survol */
-    background: linear-gradient(to top, #fff, 100%, #000, 10%, transparent 10.1%); /* Dégradé de blanc */
-    background-size: 0 100%; /* Taille du dégradé */
+    /* transition à partir du centre */
+    background-image: linear-gradient(to right, #000, #000);
+    background-size: 0% 2px; /* Définir la taille initiale de l'image de fond */
+    background-position: 50% 100%; /* Centrer l'image de fond en bas */
     transition: background-size 0.3s; /* Transition fluide */
     text-decoration: none; /* Ajouté pour supprimer le soulignement */
 }
 
 nav ul li a:hover {
-    background-size: 100% 100%; /* Taille du dégradé */
+    background-size: 100% 2px; /* Étendre l'image de fond sur toute la largeur lors du survol */
 }
 
 /*header style*/
