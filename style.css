@@ -10,7 +10,8 @@ body {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    width: 50%;
+    width: 60%;
+    margin: 0 auto;
     font-family: 'Poppins'; /* Belle police */
 }
 
@@ -29,12 +30,13 @@ nav ul li a {
     color: #000; /*couleur noire */
     padding: 10px 20px; /* Espace autour du texte */
     transition: all 0.3s ease; /* Transition fluide lors du survol */
+    background: linear-gradient(to top, #fff, 0%, #f9f9f9, 4px, transparent 5px); /* Dégradé de blanc */
+    background-size: 0 100%; /* Taille du dégradé */
+    transition: background-size 0.3s; /* Transition fluide */
 }
 
 nav ul li a:hover {
-    /*souligne depuis le centre jusqu'au bout des mots quand on passe sa souris dessus */
-    background-image: linear-gradient(0deg, #fff 50%, transparent 50%);
-    background-position: 0 100%;
+    background-size: 100% 100%; /* Taille du dégradé */
 }
 
 /*header style*/
