@@ -1,5 +1,5 @@
 nav {
-    text-align: left; /* Alignement à gauche */
+    text-align: center; /* Alignement à gauche */
     padding: 10px;
     background-color: #fff; /* Arrière-plan blanc */
     font-family: Arial, sans-serif; /* Belle police */
@@ -26,13 +26,15 @@ nav ul li {
 }
 
 nav ul li a {
-    text-decoration: underline; /* Enlève le soulignement des liens */
     color: #000; /*couleur noire */
     padding: 10px 20px; /* Espace autour du texte */
     transition: all 0.3s ease; /* Transition fluide lors du survol */
 }
 
 nav ul li a:hover {
+    /*souligne depuis le centre jusqu'au bout des mots quand on passe sa souris dessus */
+    background-image: linear-gradient(0deg, #fff 50%, transparent 50%);
+    background-position: 0 100%;
     background-color: #AA210C; /* Couleur de fond au survol */
     color: #fff; /* Couleur du texte au survol */
 }
@@ -42,39 +44,6 @@ header {
     background-color: #75190C;
     color: #fff; 
     padding: 20px; 
-    text-align: center; 
-
-}
-
-/*creating the two-column layout*/
-*{
-    box-sizing: border-box;
-}
-
-.row {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.post-text-box {
-    flex: 70%;
-    padding: 20px;
-}
-
-.profile {
-    flex: 70%;
-    padding: 20px;
-}
-
-/*profile image and heading style*/
-.profile img {
-    width: 120px;
-    display: block;
-    margin-left: 0;
-    margin-right: 0;
-}
-
-.profile h1 {
     text-align: center; 
 }
 
