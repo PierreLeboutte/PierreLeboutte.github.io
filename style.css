@@ -2,15 +2,16 @@ nav {
     text-align: center; /* Alignement à gauche */
     padding: 10px;
     background-color: #fff; /* Arrière-plan blanc */
-    font-family: Arial, sans-serif; /* Belle police */
+    font-family: 'Poppins'; /* Belle police */
 }
 
 body {
-    display: flex;
+    display: flex; 
     flex-direction: column;
     align-items: center;
-    width: 80%;
-    font-family: Arial, sans-serif; /* Belle police */
+    text-align: center;
+    width: 50%;
+    font-family: 'Poppins'; /* Belle police */
 }
 
 nav ul {
@@ -38,8 +39,6 @@ nav ul li a:hover {
 
 /*header style*/
 header {
-    background-color: #75190C;
-    color: #fff; 
     padding: 20px; 
     text-align: center; 
 }
