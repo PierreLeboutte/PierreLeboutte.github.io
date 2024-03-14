@@ -30,7 +30,7 @@ nav ul li a {
     color: #000; /*couleur noire */
     padding: 10px 20px; /* Espace autour du texte */
     text-decoration: none; /* Ajouté pour supprimer le soulignement */
-    background-image: linear-gradient(to top, #000 0%, #000 10%, transparent 10.01% ) no-repeat left bottom 0 100%;
+    background-image: linear-gradient(to top, #000 0%, #000 10%, transparent 10.01% ) no-repeat left bottom / 0 100%;
     transition: background-size .3s; /* Transition fluide */
 }
 
