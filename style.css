@@ -7,36 +7,50 @@ nav {
 body {
     display: flex; 
     flex-direction: column;
+    background-color: white;
+    color: black;
     align-items: center;
     text-align: center;
     width: 60%;
     margin: 0 auto;
     font-family: 'Poppins'; /* Belle police */
+    text-decoration: none;
 }
 
+.dark-mode {
+    background-color: #121212;
+    color: white;
+  }
+
+nav ul li a:visited {
+    color: inherit; /* or whatever */
+}
 nav ul {
+    color:inherit;
+    text-decoration: none;
     list-style-type: none; /* Enlève les puces */
     margin: 0; /* Enlève les marges */
     padding: 0; /* Enlève les espacements internes */
 }
 
 nav ul li {
+    color:inherit;
     display: inline;  /* Affiche les éléments en ligne */
     margin-right: 20px; /* Espacement entre les onglets */
 }
 
 nav ul li a {
-    color: #000; /*couleur noire */
     padding: 10px 20px; /* Espace autour du texte */
     text-decoration: none; /* Ajouté pour supprimer le soulignement */
-    background-image: linear-gradient(to top, #000 0%, #000 10%, transparent 10.01% ) no-repeat left bottom / 0 100%;
+    background-image: linear-gradient(to top, var(color) 0%, var(color) 10%, transparent 10.01% ) no-repeat left bottom / 0 100%;
     transition: background-size .3s; /* Transition fluide */
     border-bottom: 2px solid transparent; /* Ajoute une bordure transparente en bas */
 }
 
-nav ul li a:hover {
+
+nav ul li:hover {
     background-size: 100% 100%; /* Étendre l'image de fond sur toute la largeur lors du survol */
-    border-bottom: 2px solid #000; /* Ajoute une bordure noire en bas au survol */
+    border-bottom: 2px solid var(color); /* Ajoute une bordure noire en bas au survol */
 }
 
 /*header style*/
@@ -59,3 +73,4 @@ header {
 .tabcontent {
     animation: fadeInUp 1s ease-out;
 }
+
