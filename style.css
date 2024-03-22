@@ -2,6 +2,7 @@ nav {
     text-align: center; /* Alignement à gauche */
     padding: 10px;
     font-family: 'Poppins'; /* Belle police */
+    color:inherit;
 }
 
 body {
@@ -15,15 +16,16 @@ body {
     margin: 0 auto;
     font-family: 'Poppins'; /* Belle police */
     text-decoration: none;
+    transition: background-color 1s ease;
 }
 
 .dark-mode {
-    background-color: #121212;
-    color: white;
+    background-color: #1c1d1f;
+    color: white;   
   }
 
 nav ul li a:visited {
-    color: inherit; /* or whatever */
+    color: inherit; 
 }
 nav ul {
     color:inherit;
@@ -43,7 +45,7 @@ nav ul li a {
     padding: 10px 20px; /* Espace autour du texte */
     text-decoration: none; /* Ajouté pour supprimer le soulignement */
     background-image: linear-gradient(to top, var(color) 0%, var(color) 10%, transparent 10.01% ) no-repeat left bottom / 0 100%;
-    transition: background-size .3s; /* Transition fluide */
+    transition: background-size .3s;
     border-bottom: 2px solid transparent; /* Ajoute une bordure transparente en bas */
 }
 
