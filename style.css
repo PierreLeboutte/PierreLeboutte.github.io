@@ -8,8 +8,8 @@ nav {
 body {
     display: flex; 
     flex-direction: column;
-    background-color: white;
-    color: black;
+    background-color: #1c1d1f;
+    color: white;
     align-items: center;
     text-align: center;
     width: 60%;
@@ -19,9 +19,9 @@ body {
     transition: background-color 1s ease;
 }
 
-.dark-mode {
-    background-color: #1c1d1f;
-    color: white;   
+.light-mode {
+    background-color: white;
+    color: black;   
   }
 
 nav ul li a:visited {
